@@ -29,6 +29,10 @@ app.get("/cadastro/:nome", function(req,res){
     }
 });
 
+app.get("/b", function(req, res){
+    res.send("<h1> Bem vindo NOVAMENTEEE ao meu site -_^!")
+})
+
 app.listen(4000,function(erro){ // cria a aplicação na porta 4000
     if (erro){
         console.log("Erro ao Iniciar.");
